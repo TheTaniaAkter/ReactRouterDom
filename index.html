@@ -41,3 +41,26 @@ for main.jsx
 
 
        btn=<button className={`bg-amber-950 rounded-3xl text-amber-50 ${className}`}>{btnText}</button>
+
+
+
+<!-- ============= -->
+       npm axios
+       1)copy= npm i axios
+
+
+       2)import axios from axios
+
+       const er moddhe=
+        let [allData,setAllData] =useState([])
+
+           useEffect (()=>{
+
+  async function allDatas() {
+    let data=await axios.get("https://dummyjson.com/products")
+    setAllData(data.data.products)
+    console.log(data.data.products);
+    
+  }
+  allDatas()
+},[])

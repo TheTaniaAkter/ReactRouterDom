@@ -65,3 +65,16 @@ for main.jsx
   }
   allDatas()
 },[])
+
+
+
+<!-- ========================= -->
+ let[show,setshow] =useState(false);
+const handleBtn = ()=>{
+setshow(!show)
+}
+
+
+<button onClick={handleBtn}><FaBars /></button>
+{show && <h1>tania</h1>}
+ <!-- ============================ -->
